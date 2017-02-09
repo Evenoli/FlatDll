@@ -24,6 +24,99 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="FLAT\include\Box.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FLAT\include\GlobalCommon.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FLAT\include\Mesh.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FLAT\include\MeshData.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FLAT\include\SeedBuilder.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FLAT\include\SpatialObject.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FLAT\include\SpatialObjectFactory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FLAT\include\SpatialQuery.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FLAT\include\Vertex.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\include\tools\PointerPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\include\tools\PoolPointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\include\tools\rand48.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\include\tools\SmartPointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\include\tools\Tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\include\Point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\include\Region.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\include\RTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\include\SpatialIndex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\src\rtree\BulkLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\src\rtree\hilbert.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\src\rtree\Index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\src\rtree\Leaf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\src\rtree\Node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\src\rtree\PointerPoolNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\src\rtree\RTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\src\rtree\Statistics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\src\spatialindex\SpatialIndexImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTREE\src\storagemanager\DiskStorageManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FLATDLL2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FLAT\include\FLATTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FLAT\include\addtest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -33,6 +126,75 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FLAT\src\Box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FLAT\src\Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FLAT\src\MeshData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FLAT\src\SeedBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FLAT\src\SpatialObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FLAT\src\SpatialObjectFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FLAT\src\SpatialQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FLAT\src\Vertex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTREE\src\rtree\BulkLoader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTREE\src\rtree\hilbert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTREE\src\rtree\Index.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTREE\src\rtree\Leaf.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTREE\src\rtree\Node.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTREE\src\rtree\RTree.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTREE\src\rtree\Statistics.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTREE\src\spatialindex\Point.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTREE\src\spatialindex\Region.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTREE\src\spatialindex\SpatialIndexImpl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTREE\src\storagemanager\DiskStorageManager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTREE\src\tools\rand48.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTREE\src\tools\Tools.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FLAT\src\FLATTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FLAT\src\addtest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

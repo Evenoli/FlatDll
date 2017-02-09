@@ -1,0 +1,4 @@
+LIBRARY flatdll2
+DESCRIPTION "DLL for performing flat algoruthm"
+EXPORTS
+	PerformQuery @1

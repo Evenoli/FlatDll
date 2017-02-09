@@ -5,6 +5,11 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FLATDLL2", "FLATDLL2\FLATDLL2.vcxproj", "{791E232E-71A1-462F-BB5B-455E200804AF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D4CBBC5A-0085-47CB-818A-BB98D370FF6A}"
+	ProjectSection(SolutionItems) = preProject
+		FLATDLL2.def = FLATDLL2.def
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64

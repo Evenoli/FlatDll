@@ -83,11 +83,12 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;FLATDLL2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Oli\Documents\Visual Studio 2015\Projects\FLATDLL2\FLATDLL2\RTREE\include;C:\Users\Oli\Documents\Visual Studio 2015\Projects\FLATDLL2\FLATDLL2\RTREE\src\;C:\Users\Oli\Documents\Visual Studio 2015\Projects\FLATDLL2\FLATDLL2\FLAT\src\;C:\Users\Oli\Documents\Visual Studio 2015\Projects\FLATDLL2\FLATDLL2\FLAT\include\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -96,11 +97,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;FLATDLL2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Oli\Documents\Visual Studio 2015\Projects\FLATDLL2\FLATDLL2\RTREE\include;C:\Users\Oli\Documents\Visual Studio 2015\Projects\FLATDLL2\FLATDLL2\RTREE\src\;C:\Users\Oli\Documents\Visual Studio 2015\Projects\FLATDLL2\FLATDLL2\FLAT\src\;C:\Users\Oli\Documents\Visual Studio 2015\Projects\FLATDLL2\FLATDLL2\FLAT\include\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -109,13 +111,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;FLATDLL2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Oli\Documents\Visual Studio 2015\Projects\FLATDLL2\FLATDLL2\RTREE\include;C:\Users\Oli\Documents\Visual Studio 2015\Projects\FLATDLL2\FLATDLL2\RTREE\src\;C:\Users\Oli\Documents\Visual Studio 2015\Projects\FLATDLL2\FLATDLL2\FLAT\src\;C:\Users\Oli\Documents\Visual Studio 2015\Projects\FLATDLL2\FLATDLL2\FLAT\include\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -145,6 +148,37 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FLATDLL2.h" />
+    <ClInclude Include="FLAT\include\addtest.h" />
+    <ClInclude Include="FLAT\include\Box.hpp" />
+    <ClInclude Include="FLAT\include\FLATTest.hpp" />
+    <ClInclude Include="FLAT\include\GlobalCommon.hpp" />
+    <ClInclude Include="FLAT\include\Mesh.hpp" />
+    <ClInclude Include="FLAT\include\MeshData.hpp" />
+    <ClInclude Include="FLAT\include\SeedBuilder.hpp" />
+    <ClInclude Include="FLAT\include\SpatialObject.hpp" />
+    <ClInclude Include="FLAT\include\SpatialObjectFactory.hpp" />
+    <ClInclude Include="FLAT\include\SpatialQuery.hpp" />
+    <ClInclude Include="FLAT\include\Vertex.hpp" />
+    <ClInclude Include="RTREE\include\Point.h" />
+    <ClInclude Include="RTREE\include\Region.h" />
+    <ClInclude Include="RTREE\include\RTree.h" />
+    <ClInclude Include="RTREE\include\SpatialIndex.h" />
+    <ClInclude Include="RTREE\include\tools\PointerPool.h" />
+    <ClInclude Include="RTREE\include\tools\PoolPointer.h" />
+    <ClInclude Include="RTREE\include\tools\rand48.h" />
+    <ClInclude Include="RTREE\include\tools\SmartPointer.h" />
+    <ClInclude Include="RTREE\include\tools\Tools.h" />
+    <ClInclude Include="RTREE\src\rtree\BulkLoader.h" />
+    <ClInclude Include="RTREE\src\rtree\hilbert.hpp" />
+    <ClInclude Include="RTREE\src\rtree\Index.h" />
+    <ClInclude Include="RTREE\src\rtree\Leaf.h" />
+    <ClInclude Include="RTREE\src\rtree\Node.h" />
+    <ClInclude Include="RTREE\src\rtree\PointerPoolNode.h" />
+    <ClInclude Include="RTREE\src\rtree\RTree.h" />
+    <ClInclude Include="RTREE\src\rtree\Statistics.h" />
+    <ClInclude Include="RTREE\src\spatialindex\SpatialIndexImpl.h" />
+    <ClInclude Include="RTREE\src\storagemanager\DiskStorageManager.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -164,6 +198,29 @@
       </PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="FLATDLL2.cpp" />
+    <ClCompile Include="FLAT\src\addtest.cpp" />
+    <ClCompile Include="FLAT\src\Box.cpp" />
+    <ClCompile Include="FLAT\src\FLATTest.cpp" />
+    <ClCompile Include="FLAT\src\Mesh.cpp" />
+    <ClCompile Include="FLAT\src\MeshData.cpp" />
+    <ClCompile Include="FLAT\src\SeedBuilder.cpp" />
+    <ClCompile Include="FLAT\src\SpatialObject.cpp" />
+    <ClCompile Include="FLAT\src\SpatialObjectFactory.cpp" />
+    <ClCompile Include="FLAT\src\SpatialQuery.cpp" />
+    <ClCompile Include="FLAT\src\Vertex.cpp" />
+    <ClCompile Include="RTREE\src\rtree\BulkLoader.cc" />
+    <ClCompile Include="RTREE\src\rtree\hilbert.cpp" />
+    <ClCompile Include="RTREE\src\rtree\Index.cc" />
+    <ClCompile Include="RTREE\src\rtree\Leaf.cc" />
+    <ClCompile Include="RTREE\src\rtree\Node.cc" />
+    <ClCompile Include="RTREE\src\rtree\RTree.cc" />
+    <ClCompile Include="RTREE\src\rtree\Statistics.cc" />
+    <ClCompile Include="RTREE\src\spatialindex\Point.cc" />
+    <ClCompile Include="RTREE\src\spatialindex\Region.cc" />
+    <ClCompile Include="RTREE\src\spatialindex\SpatialIndexImpl.cc" />
+    <ClCompile Include="RTREE\src\storagemanager\DiskStorageManager.cc" />
+    <ClCompile Include="RTREE\src\tools\rand48.cc" />
+    <ClCompile Include="RTREE\src\tools\Tools.cc" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
