@@ -32,6 +32,7 @@ public:
     FLATTest(char* filename, int len);
     ~FLATTest();
     
+	void clearResults();
     void performTest(float p0, float p1, float p2, float p3, float p4, float p5);
     void printMeshCoords();
 };
